@@ -1,0 +1,64 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPB7Q2j3OtQgRCV9S2w6D4v",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/navyasrireddy07/DDS/blob/main/leet%20code/day1\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "nOjHIOqa-U4I",
+        "outputId": "7a86adf1-4b38-443e-cfa2-7358d388c899"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "The modified list is: [2, 2]\n",
+            "The new length of the list is: 2\n"
+          ]
+        }
+      ],
+      "source": [
+        "nums = [3, 2, 2, 3]\n",
+        "val = 3\n",
+        "\n",
+        "k=0\n",
+        "for i in range(len(nums)):\n",
+        "   if nums[i] !=val:\n",
+        "      nums[k] = nums[i]\n",
+        "      k +=1\n",
+        "\n",
+        "print(f\"The modified list is: {nums[:k]}\")\n",
+        "print(f\"The new length of the list is: {k}\")"
+      ]
+    }
+  ]
+}
